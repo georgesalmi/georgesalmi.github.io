@@ -3,7 +3,7 @@ body {
 }
 
 .tab-container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@ body {
 .tab-button {
     background-color: #B31D1D;
     border: none;
-    padding: 14px 80px;
+    padding: 14px 60px;
     margin: 0;
     cursor: pointer;
     border-radius: 5px 5px 0 0;
