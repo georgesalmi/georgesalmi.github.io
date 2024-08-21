@@ -11,3 +11,16 @@ function openTab(evt, tabId) {
     document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function showEmail(event) {
+    event.preventDefault();
+    var emailLink = document.getElementById('email-link');
+    var emailDisplay = document.getElementById('email-display');
+
+    emailLink.style.opacity = 0;
+    setTimeout(function() {
+        emailLink.style.display = 'none';
+        emailDisplay.textContent = 'gmsalmi@icloud.com';
+        emailDisplay.style.opacity = 1;
+    }, 300);
+}
