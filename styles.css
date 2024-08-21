@@ -46,6 +46,13 @@ body {
     display: block;
 }
 
+.limited-width {
+    max-width: 600px;   /* Limits the width of the paragraph */
+    margin-left: 0;     /* Aligns the paragraph to the left */
+    margin-right: auto; /* Ensures no space is added on the right */
+    text-align: left;   /* Aligns the text to the left */
+}
+
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 600px) {
     .tabs {
