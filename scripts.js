@@ -30,7 +30,7 @@ function showEmail(event) {
     // Get the <a> element
     const emailLinkElement = document.getElementById('email-link');
     // Create the email link
-    const emailLink = '<a href="mailto:gmsalmi@icloud.com?subject=Inquiry%20from%20your%20website&body=Hello,%20I%20would%20like%20to%20know%20more%20about...">gmsalmi@icloud.com</a>';
+    const emailLink = '<a href="mailto:gmsalmi@icloud.com?subject= &body= ">gmsalmi@icloud.com</a>';
     // Replace the text of the <a> element with the email link
     emailLinkElement.outerHTML = emailLink;
 }
