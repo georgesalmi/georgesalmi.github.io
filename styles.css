@@ -16,10 +16,14 @@ body {
     background-color: #B31D1D;
     border: none;
     padding: 14px 60px;
-    margin: 0;
+    margin-right: 5px; /* Adds spacing between the tabs */
     cursor: pointer;
     border-radius: 5px 5px 0 0;
     transition: background-color 0.3s;
+}
+
+.tab-button:last-child {
+    margin-right: 0; /* No extra space after the last tab */
 }
 
 .tab-button.active {
