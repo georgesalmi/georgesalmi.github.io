@@ -10,6 +10,8 @@ body {
 .tabs {
     display: flex;
     cursor: pointer;
+    justify-content: flex-start; /* Aligns tabs to the left */
+    flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
 }
 
 .tab-button {
@@ -20,6 +22,8 @@ body {
     cursor: pointer;
     border-radius: 5px 5px 0 0;
     transition: background-color 0.3s;
+    text-align: center; /* Centers text inside the tab */
+    flex-grow: 0; /* Ensures tabs don’t stretch on larger screens */
 }
 
 .tab-button:last-child {
@@ -40,4 +44,22 @@ body {
 
 .tab-content.active {
     display: block;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    .tabs {
+        justify-content: center; /* Center the tabs on smaller screens */
+    }
+
+    .tab-button {
+        padding: 10px;
+        font-size: 14px;
+        margin-right: 2px;
+        flex-grow: 1; /* Makes tabs more flexible on smaller screens */
+    }
+
+    .tab-container {
+        width: 100%; /* Full width for smaller screens */
+    }
 }
